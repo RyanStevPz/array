@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de estudiantes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <p class="eyebrow">Reto final · Actividad 04</p>
+        <h1>Buscador de estudiantes</h1>
+        <p>Escribe el nombre de un estudiante para consultar su edad y curso.</p>
+
+        <form class="search-form" onsubmit="buscarEstudiante(event)">
+            <label for="nombre-estudiante">Nombre del estudiante</label>
+            <input
+                type="text"
+                id="nombre-estudiante"
+                placeholder="Ejemplo: Ana Torres"
+                autocomplete="off"
+            >
+            <button type="submit">Buscar estudiante</button>
+        </form>
+
+        <p id="mensaje-busqueda" role="status" aria-live="polite"></p>
+        <section id="resultado-estudiante" aria-live="polite"></section>
+
+        <h2>Estudiantes disponibles</h2>
+        <ul class="student-list">
+            <li>Ana Torres</li>
+            <li>Mateo Ruiz</li>
+            <li>Lucía Gómez</li>
+            <li>Samuel Díaz</li>
+            <li>Valentina Cruz</li>
+        </ul>
+
+        <a class="back-button" href="index.html">Regresar al inicio</a>
+    </main>
+    <script src="js/ejercicio4.js"></script>
+</body>
+</html>
